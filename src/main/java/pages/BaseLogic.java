@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -117,7 +118,7 @@ public class BaseLogic {
     /**
      * Waits until all JavaScript code is executed in a page
      */
-    private void waitForJSToBeLoaded() {
+    public void waitForJSToBeLoaded() {
         wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
     }
 }
