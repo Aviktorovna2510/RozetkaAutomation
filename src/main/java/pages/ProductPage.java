@@ -86,7 +86,7 @@ public class ProductPage extends BaseLogic {
 
     @Step("Go to cart")
     public void goToCart() {
-        clickWhenReady(cartIcon);
+        clickOnElementWithJSExecutor(cartIcon);
     }
 
     @Step("Verify cart contains product")
