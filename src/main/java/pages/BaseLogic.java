@@ -88,6 +88,17 @@ public class BaseLogic {
     }
 
     /**
+     * Performs click on WebElement with JavaScriptExecutor
+     *
+     * @param element - a web-element
+     */
+
+    public void clickOnElementWithJSExecutor (WebElement element) {
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
+    }
+
+    /**
      * Performs highlighting of incoming WebElement
      *
      * @param element - a web-element
