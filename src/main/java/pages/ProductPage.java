@@ -74,6 +74,7 @@ public class ProductPage extends BaseLogic {
 
     @Step("Verify Item added to cart popup")
     public void verifyCartPopup() {
+        waitForJSToBeLoaded();
         waitForVisible(itemAddedToCartPopupTitle);
 
         Assert.assertEquals(itemAddedToCartPopupTitle.getText(), EXPECTED_CART_POP_UP_TITLE);
