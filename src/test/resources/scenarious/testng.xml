@@ -1,0 +1,13 @@
+<suite name="Shopping process">
+
+    <test name="Site search and cart functionality verification">
+
+        <parameter name="product" value="iPhone"/>
+        <parameter name="manufacturer" value="Apple"/>
+
+        <classes>
+            <class name="tests.SmokeTest"/>
+        </classes>
+
+    </test>
+</suite>
